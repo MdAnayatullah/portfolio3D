@@ -7,6 +7,10 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+//public key: y2fbVRWz31eWcL1mQ
+//templete id: template_cvo2x7f
+//service id: service_tq1arpq
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,9 +20,50 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {};
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_tq1arpq",
+        "template_cvo2x7f",
+        {
+          from_name: form.name,
+          to_name: "Md Anayatullah",
+          from_email: form.email,
+          to_email: "mdanayatullah143@gmail.com",
+          message: form.message,
+        },
+        "y2fbVRWz31eWcL1mQ"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you, I will abck to you as soon as possible");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+
+          console.log(error);
+
+          alert("Something went wrong");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -61,8 +106,8 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
-              rows="7"
-              name="name"
+              rows={7}
+              name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say ?"
@@ -70,7 +115,7 @@ const Contact = () => {
             />
           </label>
           <button
-            type="button"
+            type="submit"
             className="bg-tertiary py-3 px-8 out-of-range: w-fit text-white
           font-bold shadow-md shadow-primary rounded-xl"
           >
