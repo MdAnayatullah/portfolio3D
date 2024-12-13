@@ -32,6 +32,8 @@ import EE from "./company/EE.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import emojify from "./emojify.png";
+import ecms from "./ecms.png";
 
 export {
   logo,
@@ -61,8 +63,10 @@ export {
   // tesla,
   selfwork,
   EE,
+  emojify,
   carrent,
   jobit,
   tripguide,
+  ecms,
   cpp,
 };

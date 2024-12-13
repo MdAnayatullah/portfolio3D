@@ -11,6 +11,7 @@ import {
   Works,
   StarsCanvas,
   Education,
+  Resume,
 } from "./components";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
+        <Resume />
       </div>
     </BrowserRouter>
   );

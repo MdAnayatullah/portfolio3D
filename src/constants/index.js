@@ -21,9 +21,11 @@ import {
   // shopify,
   selfwork,
   EE,
+  emojify,
   carrent,
   jobit,
   tripguide,
+  ecms,
   threejs,
   cpp,
 } from "../assets";
@@ -38,12 +40,20 @@ export const navLinks = [
     title: "Work",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "project",
+    title: "Projects",
   },
   {
     id: "education",
     title: "Education",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+  {
+    id: "resume",
+    title: "Resume",
   },
 ];
 
@@ -284,6 +294,53 @@ const projects = [
     image: tripguide,
     source_code_link:
       "https://github.com/MdAnayatullah/Remote-Control-PC-Android-App",
+  },
+  {
+    name: " Emojify using Deep Learning",
+    description:
+      "An Emojify is a deep learning project . It will detect the human expression and coordingly create an emoji in real time.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "deep-learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tensorflow",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: emojify,
+    source_code_link: "https://github.com/MdAnayatullah/Minor_Project-Emojify",
+  },
+  {
+    name: " ECMS ",
+    description:
+      "Examination Control Management system (ECMS) is a web appliaction. Design to assign time table and duties of teachers/faculty digitally. It also helps to assign the duties of teachers at examination times.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootsrap",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: ecms,
+    source_code_link:
+      "https://github.com/MdAnayatullah/examination-control-management-system",
   },
 ];
 
