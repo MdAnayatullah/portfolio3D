@@ -41,10 +41,12 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet soluta
-        quibusdam nulla dignissimos repudiandae incidunt rerum aliquid nesciunt
-        adipisci, aut tempore commodi accusantium, officiis iure voluptate at
-        quam fuga laudantium!
+        I'm a skilled software developer/ web developer with experience in
+        TypeScript and JavaScript, and expertise in frameworks like React.js,
+        Node.js.Also i have knowledge of other programming languages like C/C++,
+        Java, python. I'm a quick learner and collaborate closely with clients
+        to create efficient, scalable, and user-friendly solutions that solve
+        real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

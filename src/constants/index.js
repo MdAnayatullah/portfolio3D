@@ -4,7 +4,7 @@ import {
   creator,
   web,
   javascript,
-  typescript,
+  // typescript,
   html,
   css,
   reactjs,
@@ -15,14 +15,17 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  // meta,
+  // starbucks,
+  // tesla,
+  // shopify,
+  selfwork,
+  EE,
   carrent,
   jobit,
   tripguide,
   threejs,
+  cpp,
 } from "../assets";
 
 export const navLinks = [
@@ -38,19 +41,23 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "education",
+    title: "Education",
+  },
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Software Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "UI/UX Designer",
     icon: backend,
   },
   {
@@ -72,10 +79,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -112,15 +119,32 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "cpp",
+    icon: cpp,
+  },
 ];
 
 const experiences = [
   {
+    title: "Frontend Developer Intern",
+    company_name: "Engineering & Environmental Solution Pvt Ltd",
+    icon: EE,
+    iconBg: "#383E56",
+    date: "Aug 2023 - Nov 2023  ",
+    points: [
+      "Developing and maintaining web applications of company's own website using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Design  Gallery and About Us Sections",
+    ],
+  },
+  {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    company_name: "Selfwork",
+    icon: selfwork,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2021 - Present ",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -129,11 +153,11 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer",
+    company_name: "Selfwork",
+    icon: selfwork,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2022 -  Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,11 +166,11 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Web App Developer",
+    company_name: "Selfwork",
+    icon: selfwork,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -154,43 +178,43 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  // {
+  //   title: "Full stack Developer",
+  //   company_name: "Selfwork",
+  //   icon: selfwork,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "I thought it was impossible to make a website as beautiful as our product, but Anayat proved me wrong.",
+    name: "Saima Naseem",
+    designation: "Software Engineer",
+    company: "Edx",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "I've never met a web developer who truly cares about their clients' success like Anayat does.",
+    name: "Md Jaweed",
+    designation: "Sales Engineer",
+    company: "DLF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
+      "After Anayat optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Safina Khan",
+    designation: "Owner",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
@@ -198,12 +222,12 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Online Book Store",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based an online platform for purchasing and selling book. A  full-stack application with user registration, login, and secure checkout features",
     tags: [
       {
-        name: "react",
+        name: "react.js",
         color: "blue-text-gradient",
       },
       {
@@ -216,49 +240,50 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/MdAnayatullah/Online-Book-Store",
   },
   {
-    name: "Job IT",
+    name: "Portfolio website",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Modern Portfolio Web application to showcase my personal works and projects. It's well designed and animated with tailwind css and react.js.",
     tags: [
       {
-        name: "react",
+        name: "react.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "JS",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/MdAnayatullah/portfolio-webapp",
   },
   {
-    name: "Trip Guide",
+    name: " Remote Control PC App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A user-friendly Android app enabling remote control of personal computers. features like Control left/right click, mouse scroll, virtual keyboard, file transfer by phone",
     tags: [
       {
-        name: "nextjs",
+        name: "java",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "xml",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "socket.io",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://github.com/MdAnayatullah/Remote-Control-PC-Android-App",
   },
 ];
 

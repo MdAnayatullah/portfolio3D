@@ -3,6 +3,7 @@ import { Html, useProgress } from "@react-three/drei";
 import { progress } from "framer-motion";
 
 const Loader = () => {
+  const { progress } = useProgress(); // Extract `progress` from useProgress
   return (
     <Html>
       <span className="canvas-load"></span>
