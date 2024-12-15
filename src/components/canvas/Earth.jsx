@@ -48,7 +48,7 @@ const EarthCanvas = () => {
       <img
         src="/planet/system.jpg" // Replace with the path to your Earth image
         alt="Earth"
-        className="w-[550px] h-[550px] object-cover rounded-full shadow-lg"
+        className="w-[80%] max-w-[550px] h-auto object-cover rounded-full shadow-lg"
       />
     </div>
   );
