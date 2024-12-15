@@ -29,6 +29,17 @@ const Navbar = () => {
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
+          <button
+            className="text-secondary hover:text-white text-[18px]
+              font-medium cursor-pointer"
+          >
+            <a
+              href="https://drive.google.com/file/d/16UQtx-RqmdnJFXIS-6Z938om6VQ-WrMQ/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </button>
           {navLinks.map((link) => (
             <li
               key={link.id}

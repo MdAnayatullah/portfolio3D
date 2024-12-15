@@ -21,6 +21,7 @@ function App() {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
+          {/* <Resume /> */}
         </div>
         <About />
         <Experience />
@@ -32,7 +33,6 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
-        <Resume />
       </div>
     </BrowserRouter>
   );

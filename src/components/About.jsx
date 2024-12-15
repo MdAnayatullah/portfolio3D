@@ -35,24 +35,30 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      <div className="mt-56 sm:mt-72 md:mt-80 lg:mt-80">
+        <motion.div variants={textVariant}>
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
+        </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}>
-        I'm a skilled software developer/ web developer with experience in
-        TypeScript and JavaScript, and expertise in frameworks like React.js,
-        Node.js.Also i have knowledge of other programming languages like C/C++,
-        Java, python. I'm a quick learner and collaborate closely with clients
-        to create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
+        <motion.p variants={fadeIn("", "", 0.1, 1)}>
+          I am a passionate and versatile software and web developer with strong
+          expertise in TypeScript and JavaScript, and extensive experience with
+          modern frameworks like React.js and Node.js. Additionally, I possess
+          solid proficiency in a variety of programming languages, including
+          C/C++, Java, and Python. As a quick learner, I am always eager to
+          expand my skill set and tackle new challenges. I take pride in
+          collaborating closely with clients to develop efficient, scalable, and
+          user-friendly solutions that address real-world problems. Let's work
+          together to transform your ideas into impactful, high-quality
+          software!
+        </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((services, index) => (
-          <ServiceCard key={services.title} index={index} {...services} />
-        ))}
+        <div className="mt-20 flex flex-wrap gap-10">
+          {services.map((services, index) => (
+            <ServiceCard key={services.title} index={index} {...services} />
+          ))}
+        </div>
       </div>
     </>
   );
